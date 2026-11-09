@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Rapport – Le bilan mensuel de vos clients, envoyé sans y penser</title>
+<meta name="description" content="Saisissez les chiffres du mois en une minute. Rapport met en page le bilan à vos couleurs et l’envoie le 1er du mois, avec accusé de lecture.">
+<meta property="og:title" content="Rapport – Le bilan mensuel de vos clients, envoyé sans y penser">
+<meta property="og:description" content="Saisie en une minute, rapport à vos couleurs, envoi le 1er du mois, accusé de lecture.">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="fr_FR">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' fill='%2312263A'/%3E%3Crect x='28' y='28' width='44' height='10' fill='%23D9531E'/%3E%3Crect x='28' y='46' width='44' height='6' fill='%23fff'/%3E%3Crect x='28' y='58' width='30' height='6' fill='%23fff'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,800&family=Instrument+Sans:wght@400;600&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#12263A;--brick:#D9531E;--paper:#F4F5F2;--white:#fff;--line:#D5D9DC;--mute:#4D5B68;color-scheme:light dark}
+@media(prefers-color-scheme:dark){:root{--ink:#F1F3F4;--paper:#0E1A27;--white:#16273A;--line:#2C4157;--mute:#A9B6C1;--brick:#F0733F}}
+*{box-sizing:border-box;margin:0}
+html{scroll-behavior:smooth}
+body{background:var(--paper);color:var(--ink);font:400 17px/1.55 "Instrument Sans",system-ui,sans-serif;padding:env(safe-area-inset-top,0) 0 env(safe-area-inset-bottom,0)}
+.w{max-width:640px;margin:0 auto;padding:0 20px}
+h1,h2,.serif{font-family:Fraunces,Georgia,serif;line-height:1.1;letter-spacing:-.01em}
+h1{font-size:clamp(2.1rem,9vw,3.2rem);font-weight:800}
+h2{font-size:1.65rem;font-weight:600;margin-bottom:14px}
+header{padding:18px 0}
+.logo{font-family:Fraunces,Georgia,serif;font-weight:800;font-size:1.25rem}
+.hero{padding:18px 0 40px}
+.hero p.lead{margin:18px 0 24px;font-size:1.1rem;color:var(--mute)}
+.btn{display:block;text-align:center;background:var(--brick);color:#fff;font-weight:600;font-size:1.1rem;padding:16px 20px;border-radius:4px;text-decoration:none;min-height:52px}
+.btn:focus-visible,a:focus-visible,summary:focus-visible{outline:3px solid var(--ink);outline-offset:3px}
+.small{font-size:.9rem;color:var(--mute);margin-top:10px}
+.rep{background:var(--white);border:1px solid var(--line);border-top:6px solid var(--brick);margin-top:34px;padding:18px}
+.rep .h{display:flex;justify-content:space-between;gap:10px;font-size:.9rem;color:var(--mute);border-bottom:1px solid var(--line);padding-bottom:10px;margin-bottom:12px}
+.rep .t{font-family:Fraunces,Georgia,serif;font-weight:600;font-size:1.2rem;color:var(--ink)}
+.g{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.g b{display:block;font-family:Fraunces,Georgia,serif;font-size:1.9rem;line-height:1.1}
+.g span{font-size:.88rem;color:var(--mute)}
+.rep .f{margin-top:14px;padding-top:10px;border-top:1px solid var(--line);font-size:.88rem;color:var(--mute)}
+section{padding:36px 0;border-top:1px solid var(--line)}
+section p+p{margin-top:12px}
+ul.b{list-style:none;padding:0;display:grid;gap:18px}
+ul.b li{padding-left:16px;border-left:4px solid var(--brick)}
+ul.b strong{display:block}
+.offer{background:var(--white);border:1px solid var(--line);padding:22px;margin-top:6px}
+.offer .px{font-family:Fraunces,Georgia,serif;font-weight:800;font-size:3rem;line-height:1}
+.offer .px small{font-family:"Instrument Sans",sans-serif;font-weight:400;font-size:1rem;color:var(--mute)}
+.offer p{margin:10px 0}
+.gar{border-left:4px solid var(--ink);padding-left:12px;margin:16px 0}
+details{border-bottom:1px solid var(--line);padding:14px 0}
+summary{cursor:pointer;font-weight:600;min-height:44px;display:flex;align-items:center}
+details p{margin-top:6px;color:var(--mute)}
+footer{padding:28px 0 40px;border-top:1px solid var(--line);font-size:.9rem;color:var(--mute)}
+footer a{color:inherit;display:inline-block;padding:8px 14px 8px 0}
+@media(min-width:700px){body{font-size:18px}.hero{padding-top:50px}.btn{display:inline-block;padding:16px 36px}}
+</style>
+</head>
+<body>
+<div class="w">
+<header><span class="logo">Rapport</span></header>
+
+<main>
+<div class="hero">
+<h1>Le bilan mensuel de vos clients, envoyé sans y penser.</h1>
+<p class="lead">Vous saisissez les chiffres du mois en une minute. Rapport les met en page à vos couleurs et l’envoie le 1er du mois, avec accusé de lecture.</p>
+<a class="btn" href="#offre">Commencer</a>
+<p class="small">Garantie satisfait ou remboursé 14 jours. Sans engagement.</p>
+
+<div class="rep" aria-label="Exemple de rapport">
+<div class="h"><span class="t">Bilan d’octobre</span><span>Exemple</span></div>
+<div class="g">
+<div><b>18</b><span>publications</span></div>
+<div><b>12 400</b><span>personnes touchées</span></div>
+<div><b>+146</b><span>nouveaux abonnés</span></div>
+<div><b>4,2 %</b><span>engagement</span></div>
+</div>
+<div class="f">Lu par le client le 2 novembre à 9 h 14</div>
+</div>
+</div>
+
+<section>
+<h2>Le client veut savoir ce qu’il a eu pour son argent.</h2>
+<p>Un bilan fait à la main prend facilement une heure par client. Avec dix clients, cela fait dix heures chaque mois.</p>
+<p>Alors il part en retard, ou il ne part pas. Et sans bilan, le client se demande pourquoi il paie. C’est là que le contrat s’arrête.</p>
+</section>
+
+<section>
+<h2>Ce que Rapport fait à votre place</h2>
+<ul class="b">
+<li><strong>Saisie en une minute</strong>Vous entrez les chiffres du mois, rien d’autre.</li>
+<li><strong>Un rapport à vos couleurs</strong>Votre logo, votre couleur, une mise en page propre. Le client voit votre travail, pas un outil.</li>
+<li><strong>Envoyé le 1er, lu ou non lu</strong>Le bilan part tout seul. Vous savez quand le client l’a ouvert.</li>
+</ul>
+</section>
+
+<section id="offre">
+<h2>Un tarif qui se compte en minutes gagnées</h2>
+<div class="offer">
+<div class="px">9 €<small> par mois et par client suivi</small></div>
+<p>Soit 0,30 € par jour et par client. Pour dix clients : 90 € par mois, contre dix heures de bilans à la main.</p>
+<a class="btn" href="https://buy.stripe.com/VOTRE_LIEN_DE_PAIEMENT">Payer et commencer</a>
+<p class="small">Sans engagement, résiliable à tout moment.</p>
+<div class="gar"><strong>Satisfait ou remboursé, 14 jours.</strong> Écrivez-nous à [VOTRE E-MAIL] dans les 14 jours suivant votre paiement. Nous vous remboursons intégralement sous 5 jours ouvrés, sans justification.</div>
+</div>
+</section>
+
+<section>
+<h2>Questions fréquentes</h2>
+<details><summary>Est-ce que ça marche pour mon cas ?</summary><p>Si vous gérez les réseaux sociaux de clients que vous facturez au mois, oui. Vous saisissez vos chiffres, le rapport est le même pour tous vos clients, à vos couleurs.</p></details>
+<details><summary>Combien de temps cela me prend-il ?</summary><p>Environ une minute par client et par mois, pour saisir les chiffres. La mise en page et l’envoi sont automatiques.</p></details>
+<details><summary>Et si je veux arrêter ?</summary><p>Vous résiliez quand vous voulez, sans préavis. Dans les 14 premiers jours, vous êtes en plus remboursé sur simple demande.</p></details>
+<details><summary>À quoi sert exactement ce que je paie ?</summary><p>À la mise en page du rapport, à l’envoi programmé le 1er du mois et à l’accusé de lecture. Vous payez 9 € par client suivi : si vous en suivez moins, vous payez moins.</p></details>
+</section>
+</main>
+
+<footer>
+<a href="#">Mentions légales</a>
+<a href="#">Conditions générales de vente</a>
+<a href="#">Confidentialité</a>
+</footer>
+</div>
+</body>
+</html>
